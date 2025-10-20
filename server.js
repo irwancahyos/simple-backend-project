@@ -8,7 +8,9 @@ import { swaggerDocument } from "./config/swagger.js";
 import authRoutes from "./routes/authRoutes.js";
 import { protect } from "./config/authMiddleware.js";
 
-dotenv.config();
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config();
+}
 
 const app = express();
 app.use(cors());
