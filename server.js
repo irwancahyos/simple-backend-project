@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
+console.log("DEBUG MONGO_URI:", process.env.MONGO_URI);
 
 // Connect MongoDB
 mongoose
