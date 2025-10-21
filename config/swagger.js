@@ -7,6 +7,10 @@ export const swaggerDocument = {
   },
   servers: [
     {
+      url: 'https://simple-backend-project.vercel.app',
+      description: 'Vercel Deployment Server (Current)',
+    },
+    {
       url: 'https://simple-backend-project-production.up.railway.app',
       description: 'Production server',
     },
